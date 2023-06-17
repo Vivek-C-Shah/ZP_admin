@@ -89,7 +89,7 @@ export const createProduct = (reqData) => async (dispatch, getState) => {
       dispatch({ type: PRODUCT_CREATE_REQUEST });
 
       const response = await axios.post(
-        `products/`,
+        `/products/`,
         reqData
       );
 
